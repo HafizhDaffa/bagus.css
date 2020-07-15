@@ -1,0 +1,33 @@
+/* Bagian A */
+.bagian-satu {
+    width: 100px;
+    background: red;
+}
+/* Akhir Bagian A */
+
+/* Bagian B */
+@media screen and(max-width: 600px) {
+    .bagian-satu {
+        width: 80px;
+        background: green;
+    }
+}
+/* Akhir Bagian B */
+
+/* 
+Cara bacanya gini dengan analogi...
+if(width <= 600px) {
+    //Bagian B
+    .bagian-satu {
+        width: 80px;
+        background: green;
+    }
+}else {
+    //Bagian A
+    .bagian-satu {
+        width: 100px;
+        background: red;
+    }
+}
+// yang else (BAGIAN A) berlaku saat kondisi tidak memenuhi(DI LUAR MEDIA QUERY), bisa jadi ketika layar SEUKURAN DESKTOP
+*/
